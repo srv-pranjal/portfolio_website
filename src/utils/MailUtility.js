@@ -14,10 +14,10 @@ export const sendMail = async (
   try {
     setShowLoader(true);
     await emailjs.send(
-      import.meta.env.VITE_APP_MAIL_SERVICE_ID,
-      import.meta.env.VITE_APP_MAIL_TEMPLATE_ID,
+      import.meta.env.REACT_APP_MAIL_SERVICE_ID,
+      import.meta.env.REACT_APP_MAIL_TEMPLATE_ID,
       templateParams,
-      import.meta.env.VITE_APP_MAIL_USER_ID
+      import.meta.env.REACT_APP_MAIL_USER_ID
     );
     showToast("success", "Message sent successfully");
   } catch (error) {
