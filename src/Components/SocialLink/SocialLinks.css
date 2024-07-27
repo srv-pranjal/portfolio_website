@@ -1,0 +1,48 @@
+.social-links {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.social-links a {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--link-bg-clr);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.social-links a i {
+    transition: 0.4s;
+    font-size: 1.1rem;
+}
+
+.social-links a:hover>i {
+    color: var(--white);
+}
+
+.social-links .twitter:hover {
+    background-color: var(--twitter-clr);
+}
+
+.social-links .linkedin:hover {
+    background-color: var(--linkedin-clr);
+}
+
+.social-links .github:hover {
+    background-color: var(--github-clr);
+}
+
+.fa-twitter {
+    color: var(--twitter-clr);
+}
+
+.fa-linkedin {
+    color: var(--linkedin-clr);
+}
+
+.fa-github {
+    color: var(--github-clr);
+}

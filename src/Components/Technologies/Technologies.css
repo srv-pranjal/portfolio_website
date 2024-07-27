@@ -1,0 +1,64 @@
+.tech {
+    margin: 1rem 0;
+}
+
+.tech-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+}
+
+.tech-box {
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--white);
+    box-shadow: 0 0 6px;
+}
+
+.tech-box>* {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+
+.tech-box .js {
+    color: var(--js-clr);
+}
+
+.tech-box .react {
+    color: var(--react-clr);
+}
+
+.tech-box .node {
+    color: var(--node-clr);
+}
+
+.tech-box .html {
+    color: var(--html-clr);
+}
+
+.tech-box .css {
+    color: var(--css-clr);
+}
+
+.tech-box .mysql {
+    color: var(--mysql-clr);
+}
+
+.tech-box .java {
+    color: var(--java-clr);
+}
+
+.tech-box .git {
+    color: var(--git-clr);
+}
+
+.tech-box .spring {
+    color: var(--spring-clr);
+}

@@ -1,13 +1,241 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,200&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  font-size: 14px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-portfolio-clr: #18d26b;
+  --twitter-clr: #0097e6;
+  --linkedin-clr: #0077b5;
+  --github-clr: #6e5494;
+  --navlink-clr: rgba(255, 255, 255, 0.7);
+  --overlay-clr: rgba(0, 0, 0, 0.7);
+  --overlay-light-clr: rgba(0, 0, 0, 0.35);
+  --toast-bg-clr: #27292d;
+  --white: #fff;
+  --black: #000;
+  --section-bg-clr: rgba(0, 32, 49, 0.9);
+  --typed-clr: #c7d2fe;
+  --js-clr: #f7df1e;
+  --react-clr: #94e7fc;
+  --html-clr: #e34f26;
+  --css-clr: #264de4;
+  --mysql-clr: #77d9ef;
+  --java-clr: #b9d3e4;
+  --git-clr: #f34f29;
+  --spring-clr: #6db33f;
+  --node-clr: #3c873a;
+  --link-bg-clr: #e5e7eb;
+  --form-el-bg-clr: rgba(255, 255, 255, 0.08);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background: var(--black) url("../public/background.jpeg") center no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-primary {
+  margin-right: 1.5rem;
+  color: var(--navlink-clr);
+  font-size: 1.1rem;
+  transition: color, font-size, 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.section {
+  margin: auto;
+  padding: 2rem 2rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  height: 100%;
+  background-color: var(--section-bg-clr);
+  width: 65vw;
+}
+
+.section-title {
+  position: relative;
+  font-size: 1.5rem;
+  color: var(--navlink-clr);
+  text-shadow: 0 2px 5px var(--black);
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 15vw;
+  width: 15%;
+  bottom: 50%;
+  margin-left: 1vw;
+  border-bottom: 2px solid var(--primary-portfolio-clr);
+}
+
+@media (max-width: 520px) {
+  .section {
+    margin-top: 5rem;
+  }
+}
+
+.none {
+  display: none;
+}
+
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  min-height: 32px;
+  background-color: var(--toast-bg-clr);
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--error {
+  min-height: 32px;
+}
+
+
+.bars {
+  position: fixed;
+  font-size: x-large;
+  color: var(--primary-portfolio-clr);
+  display: none;
+  z-index: 5;
+  top: 0;
+  margin-top: 12.5px;
+  cursor: pointer;
+  animation: none;
+
+}
+
+@media (max-width: 991px) {
+  .bars {
+    display: block;
+  }
+}
+
+.left {
+  animation: fade-left 1.1s ease-in-out;
+}
+
+.right {
+  animation: fade-right 1.1s ease-in-out;
+}
+
+.fade {
+  animation: fade 2s;
+}
+
+.right-slow {
+  animation: fade-right 2s;
+}
+
+.left-slow {
+  animation: fade-left 2s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    left: -80px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    right: -80px;
+    opacity: 0;
+  }
+
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-top {
+  0% {
+    top: -300px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes fade-bottom {
+  0% {
+    bottom: -300px;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+
+@media (max-width: 520px) {
+  @keyframes fade-left {
+    0% {
+      left: -30px;
+      opacity: 0;
+    }
+
+    100% {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-right {
+    0% {
+      right: -30px;
+      opacity: 0;
+    }
+
+    100% {
+      right: 0;
+      opacity: 1;
+    }
+  }
 }

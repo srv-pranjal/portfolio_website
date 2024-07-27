@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { BrowserRouter as Router } from "react-router-dom";
+import { LoaderProvider } from "./contexts/loader-context.jsx";
+import { NavProvider } from "./contexts/nav-context.jsx";
+import { ScrollToTop } from "./Components/ScrollToTop.jsx";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <ScrollToTop />
+      <NavProvider>
+        <LoaderProvider>
+            <App />
+        </LoaderProvider>
+      </NavProvider>
+    </Router>
   </React.StrictMode>
 );
 

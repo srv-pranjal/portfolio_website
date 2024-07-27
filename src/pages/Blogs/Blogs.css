@@ -1,0 +1,84 @@
+.blogs h1 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    margin: 1rem 0 2rem 0;
+}
+
+.blogs-container {
+    margin-top: 1rem;
+}
+
+.blogs-container .blogs-column {
+    width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+.blogs .blog {
+    background-color: var(--overlay-light-clr);
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.blog .blog-title {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.blog .blog-desc {
+    color: var(--navlink-clr)
+}
+
+.blog .view-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.blog .view-blog h4 {
+    border: 2px solid var(--primary-portfolio-clr);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.blog .view-blog h4:hover {
+    background-color: var(--primary-portfolio-clr);
+    color: var(--black);
+    font-size: 1rem;
+}
+
+@media (max-width: 830px) {
+    .blogs {
+        width: 78%;
+    }
+
+    .blogs-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blogs-container .blogs-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .blogs {
+        width: 85%;
+        padding: 1.5rem 1rem;
+    }
+
+    .blog .view-blog h4 {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .blog .blog-title {
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,87 @@
+.exp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.exp-card {
+    background-color: var(--overlay-light-clr);
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.exp-card>* {
+    flex: 1;
+    color: var(--navlink-clr);
+}
+
+.exp-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+
+
+.exp-details-container .exp-desc {
+    font-size: 0.88rem;
+    line-height: 1.85;
+    letter-spacing: 0.5px;
+}
+
+.exp-details-container .tech-stack {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.tech-stack>* {
+    background-image: linear-gradient(to top right, #064e3b, #312e81);
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    padding: 0 1rem;
+    line-height: 3;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+    color: var(--white);
+}
+
+.exp-details-container .exp-role {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2;
+    color: var(--white);
+}
+
+.exp-duration {
+    text-align: center;
+    position: relative;
+}
+
+@media (max-width: 520px) {
+    .exp-details-container .exp-role {
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        line-height: 2;
+    }
+
+    .exp-card {
+        padding: 1rem;
+        flex-direction: column-reverse;
+        align-items: end;
+        gap: 1.5rem;
+    }
+
+    .exp-details-container .exp-desc {
+        font-size: 0.8rem;
+    }
+}

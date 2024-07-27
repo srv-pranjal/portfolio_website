@@ -1,0 +1,150 @@
+.navbar {
+    padding: 2rem 0;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus {
+    color: #fff;
+    position: relative;
+    padding-bottom: 0.4rem;
+}
+
+.navbar .active::before,
+.navbar a:hover::before {
+    content: "";
+    position: absolute;
+    width: 53%;
+    bottom: 0;
+    border-bottom: 3px solid var(--primary-portfolio-clr);
+    animation: marker 1s;
+}
+
+@keyframes marker {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 53%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.secondary-nav-bar {
+    display: flex;
+    padding: 0.5rem 0;
+    background-color: #000;
+    background-image: radial-gradient(circle at bottom right, black, #111827);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.secondary-nav-bar span {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.secondary-nav-bar .link-primary {
+    font-size: 1rem;
+    margin-left: 0.4rem;
+}
+
+.secondary-nav-bar .navbar {
+    margin-right: 3rem;
+    padding: 0;
+}
+
+
+@media (max-width: 991px) {
+    .secondary-nav-bar {
+        margin: 0;
+    }
+
+    .secondary-nav-bar .navbar {
+        display: none;
+    }
+
+    .secondary-nav-bar span {
+        font-size: 1.5rem;
+        line-height: 200%;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .secondary-nav-bar h1 {
+        font-size: 1.7rem;
+    }
+
+    .secondary-nav-bar span {
+        font-size: 1.5rem;
+        line-height: 200%;
+        margin-left: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-nav {
+    width: 70%;
+    border: 2px solid gray;
+    margin: auto;
+    position: relative;
+    align-self: center;
+    z-index: 20;
+    top: 25vh;
+    background: transparent;
+}
+
+.mobile-nav .navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-self: center;
+}
+
+.mobile-nav .link-primary {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.mobile-nav .navbar .active,
+.mobile-nav .navbar a:hover,
+.mobile-nav .navbar .active:focus {
+    width: 5rem;
+}
