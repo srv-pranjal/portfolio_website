@@ -4,24 +4,18 @@ import { useInView } from "react-intersection-observer";
 
 export const About = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true
+    triggerOnce: true,
   });
   return (
     <>
       <SecondaryNavbar />
       <section className="section about">
-        <h4 ref={ref} className={`section-title ${inView ? "fade" : ""}`}>
-          About Me
-        </h4>
+        <h4 className="section-title">About Me</h4>
         <div className="about-me">
-          <div ref={ref} className={`img-container ${inView ? "left" : ""}`}>
-            <img src="./././hero.jpg" alt="Pranjal Srivastava" />
+          <div className="img-container fade-in">
+            <img src="./././hero.jpg" alt="Pranjal Srivastava" loading="lazy" />
           </div>
-          <div
-            ref={ref}
-            className={`basic-information ${inView ? "right" : ""}`}
-            style={{ position: "relative" }}
-          >
+          <div className="basic-information fade-out">
             <p>
               As a full-stack developer with 2+ years of experience, I develop
               web applications using ReactJS, Java, Spring Boot, Hibernate, and

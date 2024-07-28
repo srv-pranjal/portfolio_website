@@ -13,10 +13,10 @@ export const Experience = () => {
       <div ref={ref} className="exp-container">
         {experienceData.map((exp) => (
           <div key={exp.id} className="exp-card">
-            <div className={`exp-duration ${inView ? "left" : ""}`}>
+            <div className={`exp-duration ${inView ? "fade-in-slow" : ""}`}>
               {exp.duration}
             </div>
-            <div className={`exp-details-container ${inView ? "right" : ""}`}>
+            <div className={`exp-details-container ${inView ? "fade-out-slow" : ""}`}>
               <p className="exp-role">
                 {exp.role} - {exp.company}
               </p>

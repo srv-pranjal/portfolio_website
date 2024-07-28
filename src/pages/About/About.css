@@ -12,16 +12,14 @@
 
 .img-container {
   position: relative;
-  width: 40%;
-  height: 40%;
   margin: 2rem auto;
   display: flex;
   justify-content: center;
 }
 
 .img-container img {
-  width: 70%;
-  height: 70%;
+  width: 22rem;
+  height: 22rem;
   border-radius: 50%;
 }
 
@@ -44,9 +42,10 @@
     width: 90%;
   }
 
+
   .img-container img {
-    width: 140%;
-    height: 140%;
+    width: 20rem;
+    height: 20rem;
   }
 
   .about {
@@ -61,8 +60,8 @@
   }
 
   .img-container img {
-    width: 175%;
-    height: 175%;
+    width: 16rem;
+    height: 16rem;
   }
 
   .basic-information {
