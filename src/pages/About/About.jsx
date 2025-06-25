@@ -17,8 +17,8 @@ export const About = () => {
           </div>
           <div className="basic-information fade-out">
             <p>
-              As a full-stack developer with 2+ years of experience, I develop
-              web applications using ReactJS, Java, Spring Boot, Hibernate, and
+              As a full-stack developer with 3 years of experience, I develop
+              web applications using ReactJS, Node.js, Java, Spring Boot, Hibernate, and
               MySQL. I'm passionate about creating immersive user interfaces and
               architecting end-to-end solutions that deliver seamless user
               experiences. I have a passion for learning and implementing new

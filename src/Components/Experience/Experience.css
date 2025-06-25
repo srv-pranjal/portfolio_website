@@ -31,7 +31,7 @@
 
 
 .exp-details-container .exp-desc {
-    font-size: 0.88rem;
+    font-size: .92rem;
     line-height: 1.85;
     letter-spacing: 0.5px;
 }
@@ -47,9 +47,9 @@
     background-image: linear-gradient(to top right, #064e3b, #312e81);
     font-family: "Dancing Script", cursive;
     text-align: center;
-    padding: 0 1rem;
+    padding: 0 .8rem;
     line-height: 3;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     border-radius: 10px;
     letter-spacing: 0.5px;
     color: var(--white);

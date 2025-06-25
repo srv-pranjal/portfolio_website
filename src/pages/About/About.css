@@ -25,11 +25,12 @@
 
 .basic-information {
   padding: 0 2rem;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   line-height: 1.85;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   letter-spacing: 0.5px;
-  position: "relative";
+  position: relative;
+  color: var(--about-txt-clr);
 }
 
 

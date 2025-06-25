@@ -62,3 +62,7 @@
 .tech-box .spring {
     color: var(--spring-clr);
 }
+
+.tech-box .gql {
+    color: var(--gql-clr);
+}

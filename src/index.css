@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -27,8 +28,10 @@ html {
   --git-clr: #f34f29;
   --spring-clr: #6db33f;
   --node-clr: #3c873a;
+  --gql-clr: #FF4081;
   --link-bg-clr: #e5e7eb;
   --form-el-bg-clr: rgba(255, 255, 255, 0.08);
+  --about-txt-clr: rgba(242, 247, 247, 0.9);
 }
 
 

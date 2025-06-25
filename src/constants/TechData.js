@@ -1,5 +1,5 @@
 import { RiReactjsLine, RiJavaLine } from "react-icons/ri";
-import { SiMysql, SiJavascript, SiCss3 } from "react-icons/si";
+import { SiMysql, SiJavascript, SiCss3, SiGraphql } from "react-icons/si";
 import {  FaHtml5, FaGit, FaNode } from "react-icons/fa";
 import { BiLogoSpringBoot } from "react-icons/bi";
 import { v4 as uuid } from "uuid";
@@ -19,4 +19,5 @@ export const technologies = [
   { id: uuid(), text: "HTML5", Icon: FaHtml5, clName: "html" },
   { id: uuid(), text: "CSS3", Icon: SiCss3, clName: "css" },
   { id: uuid(), text: "Git", Icon: FaGit, clName: "git" },
+  { id: uuid(), text: "GraphQL", Icon: SiGraphql, clName: "gql" }
 ];

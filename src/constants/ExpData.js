@@ -2,9 +2,18 @@ import { v4 as uuid } from "uuid";
 export const experienceData = [
   {
     id: uuid(),
+    role: "Software Engineer 2",
+    company: "PayPal",
+    duration: "September 2024 - Present",
+    description:
+      "Working in the Identity Team to develop secure, scalable identity management solutions using React, Node.js, Java, and GraphQL.Contributed to integration efforts with major partners including Amazon and Meta to enable seamless identity federation and compliance. Designed and implemented high-performance, reusable UI components for user consent flows.",
+    techStack: ["ReactJS", "NodeJS", "Java", "GraphQL"],
+  },
+  {
+    id: uuid(),
     role: "Associate Software Developer II",
     company: "HighRadius",
-    duration: "July 2023 - Present",
+    duration: "July 2023 - September 2024",
     description:
       "Led the development of a collaborative task management solution, integrating various components and functionalities including deep linking and auto-assignment. Engineered administrative tools and screens to empower clients and reduced dependencies on consulting teams, minimizing configuration ticket inflow by 65%.",
     techStack: ["ReactJS", "Java", "Spring Boot", "MySQL"],
