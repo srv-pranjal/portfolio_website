@@ -13,7 +13,7 @@ export const About = () => {
         <h4 className="section-title">About Me</h4>
         <div className="about-me">
           <div className="img-container fade-in">
-            <img src="./././hero.jpg" alt="Pranjal Srivastava" loading="lazy" />
+            <img src="./././hero.webp" alt="Pranjal Srivastava" loading="lazy" />
           </div>
           <div className="basic-information fade-out">
             <p>

@@ -52,7 +52,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: var(--black) url("../public/background.jpeg") center no-repeat;
+  background: var(--black) url("../public/background.webp") center no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
